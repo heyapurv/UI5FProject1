@@ -6,8 +6,8 @@
            
             <Text class="mytextfontsize " id="heading" text="Hello, World!" width="100%" textAlign="Center"/>
            <Label text="Enter your Name :" required="true" class="sapUiSmallMarginBegin sapUiTinyMarginTop"></Label>
-           <Input width="30%" maxLength="10" value="Apurv" class="sapUiSmallMarginBegin"></Input> 
-           <Button text="Submit" type="Accept" class="sapUiSmallMarginBegin"></Button>
+           <Input id="nameInput" enabled="true" width="30%" maxLength="10" class="sapUiSmallMarginBegin"></Input> 
+           <Button id="submitbtn" text="Submit" type="Emphasized" class="sapUiSmallMarginBegin" press="onSubmit"></Button>
             <Button id="button" text="Press Me" press="onPress"/>
 
             

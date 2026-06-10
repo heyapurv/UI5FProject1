@@ -9,6 +9,14 @@ sap.ui.define([
         },
         onPress: function () {
         this.getOwnerComponent().getRouter().navTo("RouteView2");
+        },
+        onSubmit: function () {
+            var name = this.getView().byId("nameInput").getValue();
+            this.getView().byId("heading").setText(name)
+            this.getView().byId("submitbtn").setType("Accept")
+            this.getView().byId("heading").setTextAlign("Left")
+            this.getView().byId("nameInput").setEnabled(false)
+
         }
     });
 });
