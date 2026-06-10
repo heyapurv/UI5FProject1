@@ -6,10 +6,17 @@
            
             <Text class="mytextfontsize " id="heading" text="Hello, World!" width="100%" textAlign="Center"/>
            <Label text="Enter your Name :" required="true" class="sapUiSmallMarginBegin sapUiTinyMarginTop"></Label>
-           <Input id="nameInput" enabled="true" width="30%" maxLength="10" class="sapUiSmallMarginBegin"></Input> 
+           <Input id="nameInput" enabled="true" width="80%" maxLength="100" class="sapUiSmallMarginBegin"></Input>
+           <Label text="Enter your Mobile Number :" required="true" class="sapUiSmallMarginBegin sapUiTinyMarginTop"></Label> 
+           <Input id="mobileInput" enabled="true" width="80%" maxLength="100" class="sapUiSmallMarginBegin"></Input>
+           <Label text="Enter your Email :" required="true" class="sapUiSmallMarginBegin sapUiTinyMarginTop"></Label>
+           <Input id="emailInput" enabled="true" width="80%" maxLength="100" class="sapUiSmallMarginBegin"></Input>
            <Button id="submitbtn" text="Submit" type="Emphasized" class="sapUiSmallMarginBegin" press="onSubmit"></Button>
             <Button id="button" text="Press Me" press="onPress"/>
 
+            <Text id="nameData" width="100%" text=""></Text>
+            <Text id="mobileData" width="100%" text=""></Text>
+            <Text id="emailData" width="100%" text=""></Text>
             
         </content>
         <footer>
