@@ -3,7 +3,21 @@
     xmlns="sap.m">
     <Page id="page" title="i am view 1">
         <content>
+           
+            <Text class="mytextfontsize " id="heading" text="Hello, World!" width="100%" textAlign="Center"/>
+           <Label text="Enter your Name :" required="true" class="sapUiSmallMarginBegin sapUiTinyMarginTop"></Label>
+           <Input width="30%" maxLength="10" value="Apurv" class="sapUiSmallMarginBegin"></Input> 
+           <Button text="Submit" type="Accept" class="sapUiSmallMarginBegin"></Button>
             <Button id="button" text="Press Me" press="onPress"/>
+
+            
         </content>
+        <footer>
+            <Bar  >
+                <contentRight>
+                    <Button text="Save" type="Accept"></Button>
+                </contentRight>
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>
