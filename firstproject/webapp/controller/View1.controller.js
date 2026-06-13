@@ -14,6 +14,9 @@ sap.ui.define([
         onPress3: function (){
         this.getOwnerComponent().getRouter().navTo("RouteView3");
         },
+        onPress4: function (){
+        this.getOwnerComponent().getRouter().navTo("RouteView4");
+        },
         onSubmit: function () {
             var name = this.getView().byId("nameInput").getValue();
             var mobile = this.getView().byId("mobileInput").getValue();

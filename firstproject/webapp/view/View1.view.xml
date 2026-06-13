@@ -14,6 +14,7 @@
            <Button id="submitbtn" text="Submit" type="Emphasized" class="sapUiSmallMarginBegin" press="onSubmit"></Button>
             <Button id="button" text="Press Me" press="onPress"/>
            <Button text="View 3" press="onPress3"></Button>
+           <Button text="View 4" press="onPress4"></Button>
 
             <Text id="nameData" width="100%" text=""></Text>
             <Text id="mobileData" width="100%" text=""></Text>

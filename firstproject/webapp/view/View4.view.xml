@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="com.demo.firstproject.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page
+        id="page4"
+        title="User Registration">
+
+        <content>
+            <VBox class="sapUiSmallMargin" width="500px">
+
+                <Title text="Add User" level="H2"/>
+                
+                <Input
+                    id="nameInput"
+                    placeholder="Enter Name"
+                    class="sapUiTinyMarginBottom"/>
+
+                <Input
+                    id="emailInput"
+                    placeholder="Enter Email"
+                    type="Email"
+                    class="sapUiSmallMarginBottom"/>
+
+                <Button
+                    text="Save User"
+                    type="Emphasized"
+                    press=".onSave"
+                    class="sapUiLargeMarginBottom"/>
+
+                <Table 
+                    id="userTable" 
+                    items="{userModel>/}"
+                    noDataText="No users registered yet.">
+                    
+                    <headerToolbar>
+                        <OverflowToolbar>
+                            <Title text="Registered Users" level="H2"/>
+                        </OverflowToolbar>
+                    </headerToolbar>
+
+                    <columns>
+                        <Column>
+                            <Text text="Name" />
+                        </Column>
+                        <Column>
+                            <Text text="Email" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{userModel>name}" />
+                                <Text text="{userModel>email}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
