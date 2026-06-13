@@ -1,0 +1,38 @@
+<mvc:View controllerName="com.demo.firstproject.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page  title="i am view 3 - Simple form Layout">
+        <content>
+            <form:SimpleForm title="Employee Details" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsM="2" columnsL="3">
+                <form:content>
+                    <core:Title text="Basic Details"></core:Title>
+                    <Label text="Employee Id" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Name" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Designation" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Skill" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Email" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Phone" class=""></Label>
+                    <Input ></Input>
+                    <core:Title text="Contact Details"></core:Title>
+                      <Label text="Employee Id" class=""></Label>
+                    <Input ></Input>
+                    <Label text="Employee Name" class=""></Label>
+                    <Input ></Input>
+                    <core:Title text="Other Details Details"></core:Title>
+                      <Label text="Employee Id" class=""></Label>
+                    <Input ></Input>
+                    
+                 
+                </form:content>
+
+            </form:SimpleForm>
+         
+        </content>
+      
+    </Page>
+</mvc:View>
